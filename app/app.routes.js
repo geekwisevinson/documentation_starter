@@ -4,6 +4,9 @@ angular.module('app')
         $stateProvider
             .state('home',{
                 url:'/home',
-                templateUrl:'home/home.html'
+                templateUrl:'home/home.html',
+                controller: function($scope){
+                    $scope.message="this is home"
+                }
             });
     });
